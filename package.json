@@ -14,9 +14,11 @@
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.3",
     "babel-preset-env": "^1.7.0",
-    "koa": "^2.13.1"
+    "koa": "^2.13.1",
+    "koa-router": "^10.0.0"
   },
   "devDependencies": {
+    "@types/koa-router": "^7.4.4",
     "@types/node": "^16.4.12",
     "nodemon": "^2.0.12",
     "ts-node": "^10.1.0",
