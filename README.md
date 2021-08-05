@@ -9,3 +9,5 @@
 [3.添加ts支持](https://github.com/twodogegg/learn-koa2/doc/3.添加ts支持.md)
 
 [4.添加路由](https://github.com/twodogegg/learn-koa2/doc/4.添加路由.md)
+
+[5.添加控制器](https://github.com/twodogegg/learn-koa2/doc/5.添加控制器.md)
