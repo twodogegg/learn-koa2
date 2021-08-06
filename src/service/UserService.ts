@@ -1,5 +1,9 @@
 import BaseService from "./BaseService";
 
+export interface User extends Record<string, unknown> {
+    name: string
+}
+
 class UserService extends BaseService {
     private tableName = ''
 

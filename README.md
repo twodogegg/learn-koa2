@@ -11,3 +11,5 @@
 [4.添加路由](https://github.com/twodogegg/learn-koa2/blob/main/doc/4.添加路由.md)
 
 [5.添加控制器](https://github.com/twodogegg/learn-koa2/blob/main/doc/5.添加控制器.md)
+
+[6.添加校验器](https://github.com/twodogegg/learn-koa2/blob/main/doc/6.添加校验器.md)
