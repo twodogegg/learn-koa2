@@ -17,11 +17,13 @@
     "koa": "^2.13.1",
     "koa-bodyparser": "^4.3.0",
     "koa-router": "^10.0.0",
+    "mysql": "^2.18.1",
     "validator": "^13.6.0"
   },
   "devDependencies": {
     "@types/koa-bodyparser": "^4.3.2",
     "@types/koa-router": "^7.4.4",
+    "@types/mysql": "^2.15.19",
     "@types/node": "^16.4.12",
     "@types/validator": "^13.6.3",
     "nodemon": "^2.0.12",

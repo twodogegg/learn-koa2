@@ -1,17 +1,22 @@
 import Router, { RouterContext } from "koa-router";
 import UserService, { User } from "../service/UserService";
-import { IRule } from "../validator/BaseValidator";
 import UsersValidator from "../validator/UsersValidator";
 import BaseController from "./BaseController";
 import RESTful from "./RESTful";
 
 const usersValidator = new UsersValidator();
 
+const service = new UserService();
+
 /**
  * 用户控制器
  */
 class UsersController extends BaseController implements RESTful {
-  public index(ctx: RouterContext) {}
+
+  public async index(ctx: RouterContext) {
+    const result = await service.list()
+    ctx.body = result;
+  }
 
   public show() {}
 
@@ -30,7 +35,9 @@ class UsersController extends BaseController implements RESTful {
     }
 
     // 3. 调用 Service 进行业务处理，必要时处理转换 Service 的返回结果，让它适应用户的需求。
-    const result = await UserService.insert(data);
+    const result = await service.insert(data);
+    
+
     // 4. 通过 HTTP 将结果响应给用户。
     ctx.body = result;
   }
