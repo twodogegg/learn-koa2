@@ -11,16 +11,24 @@ class BaseService {
   public async query(sql: any, values: any[] = []):Promise<Query> {
     return new Promise((resolve, reject) => {
       connection.query(sql, values, (error, results, fields) => {
-        if (error) throw error;
+        if (error) reject ({
+          status: 500,
+          message: '数据库异常'
+        });
         return resolve(results)
       })
     })
   }
 
   public async execute(sql: any, values: any[]): Promise<OkPacket> {
+    
     return new Promise((resolve, reject) => {
       connection.query(sql, values, (error, results, fields) => {
-        if (error) throw error;
+        if (error) reject ({
+          status: 500,
+          message: '数据库异常'
+        });
+        
         return resolve(results)
       })
     })
