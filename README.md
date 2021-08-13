@@ -15,3 +15,5 @@
 [6.添加校验器](https://github.com/twodogegg/learn-koa2/blob/main/doc/6.添加校验器.md)
 
 [7.数据库操作](https://github.com/twodogegg/learn-koa2/blob/main/doc/7.数据库操作.md)
+
+[8.全局捕获异常](https://github.com/twodogegg/learn-koa2/blob/main/doc/8.全局捕获异常.md)
